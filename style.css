@@ -2323,4 +2323,231 @@ body::before{
         font-size: 42px;
     }
 }
->>>>>>> e1eea8f7e9b6ccabe4049882945b126ffd5d8041
+.testimonial-section{
+    padding: 160px 18%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.testimonial-grid{
+    margin-top: 90px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 28px;
+}
+.testimonial-card{
+    padding: 40px;
+    border-radius: 32px;
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(255,255,255,0.08),
+        transparent 50%
+    ),
+    #0b0b0b;
+    border: 1px solid rgba(255,255,255,0.08);
+    text-align: left;
+    transition: 0.4s ease;
+}
+.quote-icon{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: white;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.testimonial-user{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 30px;
+}
+.testimonial-user img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.pricing-section{
+    padding: 160px 8%;
+    text-align: center;
+    position: relative;
+}
+.pricing-grid{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 28px;
+}
+.pricing-card{
+    padding: 50px 40px;
+    border-radius: 32px;
+    background: #0b0b0b;
+    border: 1px solid rgba(255,255,255,0.08);
+    text-align: left;
+    transition: 0.4s ease;
+}
+.active-price:hover{
+    border-color: #3b82f6;
+    box-shadow:
+    0 0 40px rgba(59,130,246,0.25);
+}
+.pricing-card h2{
+    font-size: 56px;
+    color: white;
+    margin: 30px 0;
+}
+.pricing-card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    list-style: none;
+}
+.pricing-card li{
+    color: #9d9d9d;
+    position: relative;
+    padding-left: 24px;
+}
+.pricing-card li::before{
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+}
+.engagement-section{
+    position: relative;
+    padding: 180px 8%;
+    background: #050505;
+    overflow: hidden;
+}
+.engagement-section::before{
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    background:
+    radial-gradient(
+        circle,
+        rgba(255,255,255,0.10),
+        transparent 70%
+    );
+    filter: blur(150px);
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+.engagement-container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 80px;
+    align-items: start;
+    position: relative;
+    z-index: 2;
+}
+.engagement-left h2{
+    font-size: 82px;
+    line-height: 1;
+    color: white;
+    margin-bottom: 80px;
+    max-width: 700px;
+}
+.engagement-features{
+    display: flex;
+    flex-direction: column;
+}
+.engagement-item{
+    display: flex;
+    gap: 24px;
+    padding: 34px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.engagement-icon{
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.02)
+    );
+    border: 1px solid rgba(255,255,255,0.08);
+    color: white;
+}
+.engagement-item h3{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+.engagement-item p{
+    color: #8d8d8d;
+    line-height: 1.8;
+    max-width: 550px;
+}
+.engagement-right{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.engagement-card{
+    padding: 34px;
+    border-radius: 24px;
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(255,255,255,0.08),
+        transparent 50%
+    ),
+    rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+}
+.card-label{
+    display: block;
+    color: #8f8f8f;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+}
+.tag-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.tag-group span{
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+    color: #d5d5d5;
+    font-size: 14px;
+}
+.pricing-card-final h3{
+    font-size: 72px;
+    color: white;
+    margin-bottom: 18px;
+}
+.pricing-card-final p{
+    color: #8d8d8d;
+    line-height: 1.8;
+}
+@media(max-width:1000px){
+    .engagement-container{
+        grid-template-columns: 1fr;
+    }
+    .engagement-left h2{
+        font-size: 52px;
+    }
+}
